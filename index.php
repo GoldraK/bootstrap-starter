@@ -18,7 +18,9 @@
         
         </article>        
         
-        <?php endwhile; else : ?>
+        <?php endwhile; 
+        get_template_part('parts/pagination');
+        else : ?>
         
         <article>
         
