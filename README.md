@@ -11,7 +11,7 @@ Este repositorio contiene una plantilla básica realizada con Bootstrap 4 que ev
 Bootstrap Starter Theme, Copyright 2018 Rafael Otal Simal
 Bootstrap Starter Theme esta distribuido bajo los términos de licencia [GNU GPL versión 3](https://www.gnu.org/licenses/gpl-3.0.html)
 
-##Post
+## Post
 
 Listado de post de la evolución de la plantilla
 
