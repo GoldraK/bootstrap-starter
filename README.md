@@ -16,3 +16,4 @@ Bootstrap Starter Theme esta distribuido bajo los términos de licencia [GNU GPL
 Listado de post de la evolución de la plantilla
 
 - [Plantilla de Wordpress desde 0]( https://rotasim.com/2018/09/plantilla-de-wordpress-desde-0/)
+- [Traduciendo plantillas de WordPress]( https://rotasim.com/2018/09/traduciendo-plantillas-de-wordpress/)
