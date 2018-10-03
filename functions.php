@@ -20,6 +20,8 @@ if ( ! function_exists( 'bootstrap_starter_setup' ) ) {
 
         add_theme_support( 'title-tag' );
 
+        add_theme_support( 'post-thumbnails' );
+
         register_nav_menu('primary', 'Principal' );
     }
 }
@@ -39,6 +41,7 @@ function add_widget_Support() {
 }
 // Hook the widget initiation and run our function
 add_action( 'widgets_init', 'add_Widget_Support' );
+
 
 function bootstrap_starter_category()
 {
@@ -61,6 +64,11 @@ function bootstrap_starter_tags()
     'Tags',
     !get_the_tags() ? 0 : count(get_the_tags()),
     'bootstrap-starter').": ",', ','</p>');
+}
+
+function bootstrap_starter_title_thumbnail()
+{
+  return get_the_post_thumbnail_caption() ? get_the_post_thumbnail_caption() : get_the_title();
 }
 
 

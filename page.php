@@ -9,6 +9,12 @@
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         
         <article class="blog-post">
+
+          <?php
+          if ( has_post_thumbnail() ) : 
+            the_post_thumbnail( 'full', [ 'class' => 'img-fluid', 'alt' => esc_html ( bootstrap_starter_title_thumbnail() ) ] ); 
+          endif;
+          ?>
           
           <h2 class="blog-post-title"><?php the_title(); ?></h2>
           
