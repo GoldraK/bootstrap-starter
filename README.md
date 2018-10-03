@@ -18,3 +18,4 @@ Listado de post de la evolución de la plantilla
 - [Plantilla de Wordpress desde 0](https://rotasim.com/2018/09/plantilla-de-wordpress-desde-0/)
 - [Traduciendo plantillas de WordPress](https://rotasim.com/2018/09/traduciendo-plantillas-de-wordpress/)
 - [Integrando Bootstrap en la paginación de Wordpress](https://rotasim.com/2018/09/integrando-bootstrap-en-la-paginacion-de-wordpress)
+- [Activa las Imágenes destacadas en tu plantilla de WordPress](https://rotasim.com/2018/10/activa-las-imagenes-destacadas-en-tu-plantilla-de-wordpress)
