@@ -107,11 +107,11 @@ embed, iframe, object, video {
 }
 
 
-.wp-video, video.wp-video-shortcode, .mejs-container, .mejs-overlay.load {
+.wp-video, video.wp-video-shortcode, .wp-video .mejs-container, .wp-video .mejs-overlay.load {
   width: 100% !important;
   height: 100% !important;
 }
-.mejs-container {
+.wp-video .mejs-container {
   padding-top: 56.25%;
 }
 .wp-video, video.wp-video-shortcode {
@@ -120,7 +120,7 @@ embed, iframe, object, video {
 video.wp-video-shortcode {
   position: relative;
 }
-.mejs-mediaelement {
+.wp-video .mejs-mediaelement {
   position: absolute;
   top: 0;
   right: 0;
