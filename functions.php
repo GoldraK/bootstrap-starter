@@ -130,4 +130,53 @@ function bootstrap_starter_title_thumbnail()
 }
 
 
+if ( ! function_exists( 'bootstrap_starter_get_link_url' ) ) :
+  function bootstrap_starter_get_link_url() {
+    $has_url = get_url_in_content( get_the_content() );
+
+    return $has_url ? $has_url : apply_filters( 'the_permalink', get_permalink() );
+  }
+endif;
+
+
+if ( ! function_exists( 'bootstrap_starter_post_meta' ) ) :
+
+function bootstrap_starter_post_meta() {
+
+  $format = get_post_format();
+  if ( current_theme_supports( 'post-formats', $format ) ) :
+    printf( '<span class="entry-format"><a href="%1$s">%2$s</a></span> ',
+      esc_url( get_post_format_link( $format ) ),
+      get_post_format_string( $format )
+    );
+  endif;
+
+  printf('<span class="entry-publish">%1$s</span> ',
+    get_the_date()
+  );
+
+  printf('<span class="entry-author"><a href="%1$s">%2$s</a></span> ',
+    esc_url( get_author_posts_url( get_the_author_meta( 'ID' ))),
+    get_the_author()
+  );
+
+ if (has_category()) :
+    printf('<span class="entry-category">%1$s</span> ',
+      get_the_category_list(', ')
+    );
+  endif;
+
+  if (get_the_tags()){
+    printf('<span class="entry-tags">%1$s</span> ',
+      get_the_tag_list('',', ')
+    );
+  }
+
+}
+
+
+endif;
+
+
+
 ?>
