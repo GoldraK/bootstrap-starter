@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../font/Flaticon.eot");
+  src: url("../font/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../font/Flaticon.woff") format("woff"),
+       url("../font/Flaticon.ttf") format("truetype"),
+       url("../font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../font/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="entry"]:before {   
+   font-family: Flaticon;
+   font-style: normal;
+   margin-right: 5px;
+}
+
+.format-chat .entry-format:before { 
+   content: "\f109"; 
+}
+
+
+.format-video .entry-format:before { 
+   content: "\f100"; 
+}
+
+
+.format-audio .entry-format:before { 
+   content: "\f101"; 
+}
+
+
+.format-quote .entry-format:before { 
+   content: "\f10a"; 
+}
+
+.format-link .entry-format:before { 
+   content: "\f107"; 
+}
+
+.format-image .entry-format:before { 
+   content: "\f106"; 
+}
+
+.format-gallery .entry-format:before { 
+   content: "\f10c"; 
+}
+
+.format-status .entry-format:before { 
+   content: "\f102"; 
+}
+
+
+.format-aside .entry-format:before { 
+   content: "\f10b"; 
+}
+
+.entry-category:before { 
+   content: "\f105"; 
+}
+
+
+.entry-author:before { 
+   content: "\f108"; 
+}
+
+.entry-tags:before { 
+   content: "\f104"; 
+}
+
+.entry-publish:before { 
+   content: "\f103"; 
+}
