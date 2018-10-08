@@ -22,11 +22,33 @@ if ( ! function_exists( 'bootstrap_starter_setup' ) ) {
 
         add_theme_support( 'post-thumbnails' );
 
+        add_theme_support('post-formats', array(
+        'aside',
+        'link',
+        'gallery',
+        'status',
+        'quote',
+        'chat',
+        'image',
+        'video',
+        'audio'
+      ));
+
         register_nav_menu('primary', 'Principal' );
     }
 }
 
 add_action( 'after_setup_theme', 'bootstrap_starter_setup' );
+
+
+function new_excerpt_more( $more ) {
+    return sprintf( '... <a href="%1$s" class="btn btn-outline-primary btn-sm">%2$s</a>',
+        get_permalink( get_the_ID() ),
+        __( 'Read More', 'bootstrap-starter' )
+    );
+} 
+add_filter('excerpt_more', 'new_excerpt_more');
+
 
 // Register a new sidebar simply named 'sidebar'
 function add_widget_Support() {
