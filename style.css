@@ -4,11 +4,47 @@ Theme URI: https://github.com/GoldraK/bootstrap-starter
 Author: Rafael Otal
 Author URI: https://www.rotasim.com
 Description: A basic theme using Bootstrap 4 framework.
-Version: 0.4
+Version: 0.5
 Text Domain: bootstrap-starter
 Domain Path: /languages
 */
 
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.format-quote blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.format-quote blockquote p {
+  display: inline;
+}
+
+.btn-sm {
+    padding: .09rem .2rem;
+    font-size: .600rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .btn-sm {
+      padding: .11rem .5rem;
+      font-size: .850rem;
+  }
+}
 
 .blog-footer {
     padding: 2.5rem 0;
@@ -16,4 +52,89 @@ Domain Path: /languages
     text-align: center;
     background-color: #f9f9f9;
     border-top: .05rem solid #e5e5e5;
+}
+
+.card-deck{
+  padding-bottom: 40px;
+}
+
+embed, iframe, object, video {
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.format-chat .card-text {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    background: #eee;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 2em;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.format-video .card-text{
+  text-align: center
+}
+
+.format-audio .card-text{
+  text-align: center
+}
+
+.format-status .author{
+  font-style: italic;
+}
+
+.entry-format-publish{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.card-footer{
+  font-size: 14px;
+}
+
+.card-text img, img.size-full {
+    max-width: 100%;
+}
+
+.card-text img, img[class*="align"], img[class*="wp-image-"] {
+    height: auto;
+}
+
+.format-gallery .item{
+  margin-bottom: 1rem;
+}
+
+
+.wp-video, video.wp-video-shortcode, .mejs-container, .mejs-overlay.load {
+  width: 100% !important;
+  height: 100% !important;
+}
+.mejs-container {
+  padding-top: 56.25%;
+}
+.wp-video, video.wp-video-shortcode {
+  max-width: 100% !important;
+}
+video.wp-video-shortcode {
+  position: relative;
+}
+.mejs-mediaelement {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.mejs-controls {
+  display: none;
+}
+.mejs-overlay-play {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto !important;
+  height: auto !important;
 }
